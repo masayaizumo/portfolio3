@@ -1,0 +1,766 @@
+/* Base */
+
+*{
+  box-sizing: border-box;
+   font-family: 'Roboto', sans-serif,'Roboto Condensed', sans-serif;
+   line-height: 1.8rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+
+  opacity: .7;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.title-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+}
+.container-btn{
+  border: 2px solid #000000;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+
+}
+.container-btn:hover {
+  cursor: pointer;
+  opacity: .7;
+  transition:all .3s;
+}
+/* //Base */
+
+/* header */
+
+.header-wrapper {
+  padding: 24px 36px ;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: #FFFFFF;
+  
+}
+
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.header-logo img {
+  height: 36px;
+  vertical-align: bottom;
+}
+.header-logo img:hover {
+  cursor: pointer;
+  opacity: .7;
+  transition: all .3s;
+}
+.nav-list {
+  display: flex;
+
+}
+.nav-list li {
+  list-style: none;
+  margin-right: 38px;
+}
+.nav-list li:last-of-type{
+
+  margin-right: 0px;
+}
+.nav-list a {
+  text-decoration: none;
+  color:#000000;
+  font-size: 1rem;
+}
+.nav-list a:hover {
+  cursor: pointer;
+  opacity: .7;
+  transition: all .3s;
+}
+
+/* ハンバーガーメニュー */
+.hum-btn{
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+}
+.hum-btn:hover{
+  transition: .3s;
+cursor: pointer;
+opacity: .7;
+}
+.bar {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  transform: translate(20%);
+
+}
+.bar-top {
+  top: 10px;
+}
+.bar-mid {
+  top: 50%;
+}
+.bar-bottom {
+  bottom: 10px;
+}
+
+/* ×ボタン */
+.hum-btn.close .bar-top{
+  transition: .3s;
+  transform:translateY(3px) rotate(45deg);
+}
+.hum-btn.close .bar-mid{
+  transition: .3s;
+  opacity: 0;
+}
+.hum-btn.close .bar-bottom{
+  transition: .3s;
+  transform:translateY(-15px) rotate(135deg);
+  
+}
+
+
+/* ×ボタン */
+
+
+
+
+/* //ハンバーガーメニュー */
+
+
+/* //header */
+
+
+/* fv */
+
+.fv-wrapper {
+height: 821px;
+position: relative;
+background-image: url(../img/fv-img.jpg);
+background-size: cover;
+background-position:center;
+}
+.fv-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 688px;
+  height: 388px;
+  text-align: center;
+  padding: 120px 100px;
+  background-color: rgba(27, 25, 25, 0.5);
+  
+}
+.fv-title {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.fv-ja {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.fv-en {
+  font-size: .7rem;
+  color: #FFFFFF;
+  
+}
+
+/* //fv */
+
+/* about */
+
+.about-wrapper {
+  text-align: center;
+  padding: 120px 0;
+}
+.about-text p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-btn a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/* //about */
+
+/* News */
+.news-wrapper {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 66px 20px 71px;
+}
+
+.text-box {
+  text-align: left;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.text-box p {
+  padding: 16px 0 16px;
+  border-top: 1px solid #E0E0E0;
+  font-size: 0.875rem;
+}
+.text-box p:last-of-type {
+  
+  border-bottom: 1px solid #E0E0E0;
+}
+.date {
+  
+  margin-right: 36px;
+}
+
+
+
+/* //News */
+
+/* Business */
+.business-wrapper {
+  text-align: center;
+  padding-top: 48px;
+}
+.business-container {
+  display: flex;
+
+}
+.bus-flex {
+  width: 33.3%;
+  height: 430px;
+  
+}
+.bus-flex img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.bus-flex:hover {
+  cursor: pointer;
+  opacity: .7;
+  transition: .3s;
+ }
+.bus-flex p {
+  line-height: 3rem;
+}
+.bus-flex a {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.bus-flex01{
+  position: relative;
+}
+.bus01{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #FFFFFF;
+}
+.bus-flex02{
+  position: relative;
+}
+.bus02{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #FFFFFF;
+}
+.bus-flex03{
+  position: relative;
+}
+.bus03{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #FFFFFF;
+}
+
+/* //Business */
+
+/* Property */
+.property-wrapper {
+  padding-top: 56px;
+  text-align: center;
+  
+}
+.property-container {
+  background-image: url(../img/property-img.jpg);
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.property-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255,0.9);
+  padding:47px  52px;
+  width:400px;
+ 
+}
+.property-text-container p {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.property-btn {
+  margin-top:14px; 
+}
+
+
+/* //Property */
+
+/* Operation */
+.operation-wrapper {
+  padding-top: 56px;
+  text-align: center;
+}
+.operation-container {
+  height: 375px;
+  width:100%;
+  position: relative;
+  
+}
+.operation-container img{
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+  vertical-align: bottom;
+  
+}
+.operation-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.ope-list li{
+  list-style: none;
+  
+ 
+}
+.ope-list p {
+  color: #FFFFFF;
+  line-height: 3rem;
+}
+.ope-text-bottom {
+font-size: 2.5rem;
+}
+
+
+/*// Operation */
+
+/* Owners-voice */
+.owners-wrapper {
+  padding : 76px 60px 0;
+  text-align: center;
+}
+.owners-img-box {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.owners-img-box img{
+  width: 100%;
+}
+
+
+/* //Owners-voice */
+
+/* recruit */
+.recruit-wrapper {
+  padding-top : 117px;
+  text-align: center;
+}
+.recruit-flex {
+  display: flex;
+  /* height: 480px; */
+}
+.recruit-img-box {
+  width: 50%;
+  height: 480px;
+}
+.recruit-img-box img{
+  width: 100%;
+  height: 100%;
+}
+.recruit-text-container{
+  max-width: 50%;
+  padding: 154px 137px 134px 107px;
+  background-color: #F5F5F5;
+}
+.recruit-text-container p {
+  text-align: left;
+  margin-bottom: 14px;
+  font-size: 0.875rem;
+  
+}
+
+/*// recruit */
+
+
+/* contact */
+.contact-wrapper  {
+  padding:75px  20px;
+  text-align: center;
+}
+.contact-text {
+  margin-bottom: 35px;
+}
+.contact-text-top{
+  font-size: 1rem;
+}
+.contact-text-mid{
+  font-size: 0.75rem;
+}
+.contact-text-bottom {
+  font-size: 2.25rem;
+}
+.contact-flex{
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.contact-flex-box {
+  border: 2px solid #000000;
+  width: 214px;
+  padding: 42px 44px 40px;
+}
+.contact-flex-title{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contact-flex-detail{
+  font-size: 0.75rem;
+}
+
+
+/*// contact */
+
+/* navigation */
+.nav-wrapper {
+  background-color: #EAEAEA;
+  padding: 57px 70px 87px;
+}
+.navigation-items {
+  display: flex;
+  
+}
+ul li {
+  list-style: none;
+}
+.nav-left {
+  margin-right: 146px;
+}
+.nav-mid {
+  margin-right: 74px;
+}
+.navigation-logo {
+  margin-left:auto;
+}
+.navigation-logo:hover {
+  opacity: .7;
+  cursor: pointer;
+transition:all .3s;
+}
+
+
+/* //navigation */
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  padding: 19px 60px 14px;
+}
+small {
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  text-align: right;
+  
+  display: block;
+}
+
+/* //Footer */
+
+/* スマホ表示 */
+
+@media(max-width :768px){
+
+
+  /* BASE */
+*{
+  box-sizing: border-box;
+}
+
+  body{
+    max-width: 100%;
+  }
+  body.noscroll{
+    overflow: hidden;
+  }
+
+.container-btn {
+  width: 200px;
+}
+.title-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+  /*// BASE */
+
+
+  /* header */
+
+  
+  
+.header-nav {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+ 
+}
+
+
+.nav-list{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  flex-direction: column;
+ z-index: 2;
+}
+.nav-list li {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-right: 0;
+
+}
+.nav-list li:last-of-type {
+  margin-bottom: 0px;
+
+
+}
+.nav-list a {
+  font-size: 2rem;
+}
+
+/* ハンバーガーメニュー */
+.hum-btn {
+  display: block;
+  z-index: 3;
+}
+
+/*// header */
+
+/* fv */
+.fv-text-container {
+  max-width: 100%;
+}
+
+/*// fv */
+
+/* About */
+.about-wrapper {
+  padding: 30px 0;
+}
+.about-text p {
+  font-size: 0.9rem;
+}
+
+
+/* //About */
+
+/* Business */
+.business-container {
+  flex-direction: column;
+  padding: 0 10px;
+}
+.bus-flex {
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.bus-flex:last-of-type {
+  
+  margin-bottom: 0px;
+}
+
+/* //Business */
+
+
+/* Property */
+.property-wrapper {
+  padding: 35px 10px 0;
+}
+
+/* //Property */
+
+
+/* Operation */
+.operation-container{
+ padding: 35px 10px 0;
+  width: 100%;
+}
+.operation-container img {
+  
+  width: 100%;
+}
+.ope-list p {
+  font-size: .7rem;
+}
+.ope-text-bottom p {
+  font-size: 1.2rem;
+}
+
+/* //Operation */
+
+/* Owners voice  */
+
+.owners-wrapper {
+  padding : 35px 10px 0;
+  text-align: center;
+}
+.owners-img-box {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.owners-img-box img{
+  width: 100%;
+}
+
+
+/* //Owners voice  */
+
+/* Recruit */
+.recruit-wrapper {
+  padding : 35px 10px 0 ;
+  text-align: center;
+  
+}
+.recruit-flex {
+  flex-direction: column;
+ 
+}
+.recruit-img-box {
+  width: 100%;
+}
+
+.recruit-text-container{
+  max-width: 100%;
+  padding: 40px 60px 40px 60px;
+  background-color: #F5F5F5;
+}
+.recruit-text-container p {
+  text-align: center;
+  margin-bottom: 14px;
+  font-size: 0.875rem;
+  
+}
+
+
+/* //Recruit */
+
+/* Contact */
+.contact-wrapper {
+  padding:35px 10px 0  ;
+}
+
+
+
+.contact-flex{
+  flex-direction: column;
+}
+
+.contact-flex-box {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.contact-flex-box:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* //Contact */
+
+/* Navigation */
+.nav-wrapper {
+  padding: 35px 10px 0 ;
+  margin-top: 35px;
+}
+
+.navigation-items {
+  flex-direction: column;
+}
+
+.nav-left,.nav-mid,.nav-right {
+  margin-right: 0;
+  text-align: center;
+}
+.nav-left li,.nav-mid li,.nav-right li {
+  margin-bottom: 25px;
+}
+.nav-right {
+  margin-bottom: 35px;
+}
+.navigation-logo {
+  margin:0 auto 40px;
+  max-width: 300px;
+}
+.navigation-logo img{
+  width: 100%;
+}
+
+/* //Navigation */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
