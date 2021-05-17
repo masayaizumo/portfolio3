@@ -1,4 +1,7 @@
-/* Base */
+
+/*-------------------------*/
+/* Base                         */
+/*-------------------------*/
 
 *{
   box-sizing: border-box;
@@ -36,9 +39,10 @@ a:hover {
   opacity: .7;
   transition:all .3s;
 }
-/* //Base */
 
-/* header */
+/*-------------------------*/
+/* header                     */
+/*-------------------------*/
 
 .header-wrapper {
   padding: 24px 36px ;
@@ -87,7 +91,9 @@ a:hover {
   transition: all .3s;
 }
 
-/* ハンバーガーメニュー */
+/*-------------------------*/
+/* ハンバーガーメニュー  */
+/*-------------------------*/
 .hum-btn{
   display: none;
   width: 40px;
@@ -119,10 +125,10 @@ opacity: .7;
   bottom: 10px;
 }
 
-/* ×ボタン */
+
 .hum-btn.close .bar-top{
   transition: .3s;
-  transform:translateY(3px) rotate(45deg);
+  transform:translate(4px,5px) rotate(45deg);
 }
 .hum-btn.close .bar-mid{
   transition: .3s;
@@ -130,23 +136,16 @@ opacity: .7;
 }
 .hum-btn.close .bar-bottom{
   transition: .3s;
-  transform:translateY(-15px) rotate(135deg);
+  transform:translate(4px, -13px) rotate(135deg);
   
 }
 
 
-/* ×ボタン */
 
 
-
-
-/* //ハンバーガーメニュー */
-
-
-/* //header */
-
-
-/* fv */
+/*-------------------------*/
+/* fv                             */
+/*-------------------------*/
 
 .fv-wrapper {
 height: 821px;
@@ -154,6 +153,17 @@ position: relative;
 background-image: url(../img/fv-img.jpg);
 background-size: cover;
 background-position:center;
+
+}
+.fv-wrapper::before{
+  background-color: rgba(142, 157, 160, 0.612);
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
 }
 .fv-text-container {
   position: absolute;
@@ -164,7 +174,7 @@ background-position:center;
   height: 388px;
   text-align: center;
   padding: 120px 100px;
-  background-color: rgba(27, 25, 25, 0.5);
+  
   
 }
 .fv-title {
@@ -185,9 +195,10 @@ background-position:center;
   
 }
 
-/* //fv */
 
-/* about */
+/*-------------------------*/
+/* about                       */
+/*-------------------------*/
 
 .about-wrapper {
   text-align: center;
@@ -205,9 +216,10 @@ background-position:center;
 }
 
 
-/* //about */
 
-/* News */
+/*-------------------------*/
+/* News                        */
+/*-------------------------*/
 .news-wrapper {
   background-color: #F5F5F5;
   text-align: center;
@@ -235,9 +247,10 @@ background-position:center;
 
 
 
-/* //News */
 
-/* Business */
+/*-------------------------*/
+/* Business                   */
+/*-------------------------*/
 .business-wrapper {
   text-align: center;
   padding-top: 48px;
@@ -300,9 +313,11 @@ background-position:center;
   color: #FFFFFF;
 }
 
-/* //Business */
 
-/* Property */
+/*-------------------------*/
+/* Property                   */
+/*-------------------------*/
+
 .property-wrapper {
   padding-top: 56px;
   text-align: center;
@@ -335,40 +350,51 @@ background-position:center;
 }
 
 
-/* //Property */
 
-/* Operation */
+/*-------------------------*/
+/* Operation                 */
+/*-------------------------*/
 .operation-wrapper {
   padding-top: 56px;
   text-align: center;
 }
 .operation-container {
-  height: 375px;
+
   width:100%;
   position: relative;
+  background-image: url(../img/oparation-img.jpg);
+  background-position: center;
+  height: 60vh;
   
 }
-.operation-container img{
-  height: 100%;
-  width: 100%;
-  filter: brightness(50%);
-  vertical-align: bottom;
+.operation-container::before{
+  background-color: rgba(0,0,0,0.4);
   
-}
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  }
+  
+
 .operation-flex {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-}
-
-.ope-list li{
-  list-style: none;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+  align-items: center;
   
+  
+}
+.ope-list li{
+
+  list-style: none;
+ width: 100%;
  
 }
 .ope-list p {
@@ -380,9 +406,10 @@ font-size: 2.5rem;
 }
 
 
-/*// Operation */
 
-/* Owners-voice */
+/*-------------------------*/
+/* Owners-voice            */
+/*-------------------------*/
 .owners-wrapper {
   padding : 76px 60px 0;
   text-align: center;
@@ -396,16 +423,17 @@ font-size: 2.5rem;
 }
 
 
-/* //Owners-voice */
 
-/* recruit */
+/*-------------------------*/
+/* recruit                      */
+/*-------------------------*/
 .recruit-wrapper {
   padding-top : 117px;
   text-align: center;
 }
 .recruit-flex {
   display: flex;
-  /* height: 480px; */
+  
 }
 .recruit-img-box {
   width: 50%;
@@ -427,10 +455,11 @@ font-size: 2.5rem;
   
 }
 
-/*// recruit */
 
 
-/* contact */
+/*-------------------------*/
+/* contact                     */
+/*-------------------------*/
 .contact-wrapper  {
   padding:75px  20px;
   text-align: center;
@@ -467,9 +496,10 @@ font-size: 2.5rem;
 }
 
 
-/*// contact */
 
-/* navigation */
+/*-------------------------*/
+/* navigation                 */
+/*-------------------------*/
 .nav-wrapper {
   background-color: #EAEAEA;
   padding: 57px 70px 87px;
@@ -497,9 +527,10 @@ transition:all .3s;
 }
 
 
-/* //navigation */
 
-/* Footer */
+/*-------------------------*/
+/* Footer                      */
+/*-------------------------*/
 .footer {
   background-color: #000000;
   padding: 19px 60px 14px;
@@ -512,14 +543,16 @@ small {
   display: block;
 }
 
-/* //Footer */
-
-/* スマホ表示 */
+/*-------------------------*/
+/* スマホ表示                 */
+/*-------------------------*/
 
 @media(max-width :768px){
 
+/*-------------------------*/
+/* BASE                       */
+/*-------------------------*/
 
-  /* BASE */
 *{
   box-sizing: border-box;
 }
@@ -539,10 +572,11 @@ small {
   margin-bottom: 30px;
 }
 
-  /*// BASE */
 
 
-  /* header */
+/*-------------------------*/
+/* header                      */
+/*-------------------------*/
 
   
   
@@ -582,22 +616,31 @@ small {
   font-size: 2rem;
 }
 
-/* ハンバーガーメニュー */
+
+
+/*-------------------------*/
+/* ハンバーガーメニュー  */
+/*-------------------------*/
+
 .hum-btn {
   display: block;
   z-index: 3;
 }
 
-/*// header */
 
-/* fv */
+/*-------------------------*/
+/* fv                             */
+/*-------------------------*/
 .fv-text-container {
   max-width: 100%;
 }
 
-/*// fv */
 
-/* About */
+
+
+/*-------------------------*/
+/* About                       */
+/*-------------------------*/
 .about-wrapper {
   padding: 30px 0;
 }
@@ -606,9 +649,11 @@ small {
 }
 
 
-/* //About */
 
-/* Business */
+/*-------------------------*/
+/* Business                   */
+/*-------------------------*/
+
 .business-container {
   flex-direction: column;
   padding: 0 10px;
@@ -623,21 +668,29 @@ small {
   margin-bottom: 0px;
 }
 
-/* //Business */
 
 
-/* Property */
+/*-------------------------*/
+/* Property                   */
+/*-------------------------*/
+
 .property-wrapper {
   padding: 35px 10px 0;
 }
 
-/* //Property */
 
 
-/* Operation */
+/*-------------------------*/
+/* Operation                 */
+/*-------------------------*/
+.operation-wrapper{
+  padding-bottom: 0;
+}
+
 .operation-container{
  padding: 35px 10px 0;
   width: 100%;
+  height: 50vh;
 }
 .operation-container img {
   
@@ -650,9 +703,10 @@ small {
   font-size: 1.2rem;
 }
 
-/* //Operation */
 
-/* Owners voice  */
+/*-------------------------*/
+/* Owners voice            */
+/*-------------------------*/
 
 .owners-wrapper {
   padding : 35px 10px 0;
@@ -667,9 +721,11 @@ small {
 }
 
 
-/* //Owners voice  */
 
-/* Recruit */
+/*-------------------------*/
+/* Recruit                     */
+/*-------------------------*/
+
 .recruit-wrapper {
   padding : 35px 10px 0 ;
   text-align: center;
@@ -696,9 +752,10 @@ small {
 }
 
 
-/* //Recruit */
 
-/* Contact */
+/*-------------------------*/
+/* Contact                    */
+/*-------------------------*/
 .contact-wrapper {
   padding:35px 10px 0  ;
 }
@@ -717,9 +774,11 @@ small {
   margin-bottom: 0px;
 }
 
-/* //Contact */
 
-/* Navigation */
+/*-------------------------*/
+/* Navigation                */
+/*-------------------------*/
+
 .nav-wrapper {
   padding: 35px 10px 0 ;
   margin-top: 35px;
@@ -746,20 +805,6 @@ small {
 .navigation-logo img{
   width: 100%;
 }
-
-/* //Navigation */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
